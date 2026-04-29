@@ -1,7 +1,5 @@
-// netlify/edge-functions/proxy.js
+// netlify kirii
 
-// Read the backend URL from environment variables,
-// fallback value is just a placeholder – you must set it in Netlify.
 const BACKEND_URL = Netlify.env.get("BACKEND_URL") || "https://your-backend-server.com";
 
 export default async function handler(request, context) {
